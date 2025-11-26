@@ -94,29 +94,19 @@ a:active {
 
 /* Reset + modern replacement for bullets */
 
-ul,
-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-
-/* Basic nav bar */
-
 nav {
-    background-color: #333;
-    padding: 10px 20px;
+    padding: 10px;
+    background-color: black;
 }
 
-nav ul {
+nav li {
+    position: relative;
+}
+
+nav>ul {
     display: flex;
-    /* horizontal menu */
     gap: 20px;
 }
-
-
-/* Links style */
 
 nav a {
     color: white;
@@ -125,42 +115,47 @@ nav a {
     display: block;
 }
 
-
-/* Hover effect */
-
-nav a:hover {
-    background-color: #555;
-    border-radius: 4px;
-}
-
-
-/* Submenu */
-
 nav li ul {
     display: none;
-    /* hide submenu by default */
+    /* hidden by default */
     position: absolute;
-    background-color: #444;
-    margin-top: 5px;
+    top: 100%;
+    /* below parent li */
+    left: 0;
+    /* align left edge */
+    background-color: #333;
+    padding: 0.5rem 0;
+    min-width: 150px;
+    border-radius: 4px;
+    z-index: 100;
+    /* Important: ensure vertical stacking */
+    display: none;
+    flex-direction: column;
+    /* optional: safe-guard */
 }
-
-
-/* Submenu items style */
-
-nav li ul li a {
-    padding: 6px 12px;
-}
-
-
-/* Show submenu on hover */
 
 nav li:hover>ul {
     display: block;
 }
 
+nav ul li ul a {
+    color: white;
+    padding: 8px 12px;
+    display: block;
+}
 
-/* Position parent relative so submenu can be absolute */
-
-nav li {
+nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
     position: relative;
+}
+
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    color: white;
 }
