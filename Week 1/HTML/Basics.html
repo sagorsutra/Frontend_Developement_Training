@@ -11,7 +11,71 @@
 
 <body>
 
-    <nav>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                background: red;
+            }
+            
+            .block {
+                display: block;
+            }
+            
+            .inline {
+                display: inline;
+            }
+            
+            .flex {
+                display: flex;
+            }
+            
+            .none {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h3>display: block (default for div)</h3>
+        <div class="box block">BLOCK 1</div>
+        <div class="box block">BLOCK 2</div>
+
+        <h3>display: inline (like span or a)</h3>
+        <span class="box inline">INLINE 1</span>
+        <span class="box inline">INLINE 2</span>
+
+        <h3>display: flex (menu magic)</h3>
+        <div style="display:flex; gap:20px;">
+            <div class="box">Flex Child 1</div>
+            <div class="box">Flex Child 2</div>
+        </div>
+
+        <h3>display: none (completely disappears)</h3>
+        <div class="box none">You can't see me!</div>
+
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <nav>
         <ul>
             <li><a href="WWW.google.com">Home</a> </li>
             <li><a href="WWW.google.com">About</a> </li>
@@ -28,20 +92,7 @@
             <li><a href="WWW.google.com">Contact</a> </li>
         </ul>
     </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ -->
 
 
 
