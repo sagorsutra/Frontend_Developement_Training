@@ -1,0 +1,17 @@
+/* body {
+    background-color: rgb(6, 37, 37);
+}
+
+h1 {
+    color: blue;
+} */
+
+table,
+td {
+    border: 1px solid black;
+}
+
+tr {
+    border-radius: 15px;
+    /* background-color: rgb(6, 37, 37); */
+}
