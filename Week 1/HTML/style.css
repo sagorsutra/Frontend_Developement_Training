@@ -23,7 +23,8 @@ th {
     padding-right: 40px;
 } */
 
-table {
+
+/* table {
     border-collapse: collapse;
     width: 100%;
 }
@@ -37,4 +38,129 @@ td {
 
 tr:hover {
     background-color: #D6EEEE;
+} */
+
+
+/* a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: line-through;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+} */
+
+
+/* 
+a:link,
+a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: red;
+}
+
+.btn {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+} */
+
+
+/* Reset + modern replacement for bullets */
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Basic nav bar */
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    /* horizontal menu */
+    gap: 20px;
+}
+
+
+/* Links style */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
+
+/* Hover effect */
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+
+/* Submenu */
+
+nav li ul {
+    display: none;
+    /* hide submenu by default */
+    position: absolute;
+    background-color: #444;
+    margin-top: 5px;
+}
+
+
+/* Submenu items style */
+
+nav li ul li a {
+    padding: 6px 12px;
+}
+
+
+/* Show submenu on hover */
+
+nav li:hover>ul {
+    display: block;
+}
+
+
+/* Position parent relative so submenu can be absolute */
+
+nav li {
+    position: relative;
 }
