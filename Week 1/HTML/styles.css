@@ -76,3 +76,267 @@
       border-radius: 4px;
       text-align: center;
   }
+  
+  .about {
+      background-color: #f8f9fa;
+      height: 580px;
+      width: auto;
+  }
+  
+  .about h1 {
+      font-size: 40px;
+      text-align: center;
+      padding: 30px;
+  }
+  
+  .detailContainer {
+      display: flex;
+  }
+  
+  .meDes {
+      width: 1000px;
+      padding: 40px;
+  }
+  
+  .meDes h2 {
+      padding: 20px;
+  }
+  
+  .meDes p {
+      padding-left: 20px;
+  }
+  
+  .myphoto {
+      position: absolute;
+      right: 250px;
+  }
+  
+  .myphoto img {
+      width: 350px;
+      /* Size you want */
+      height: 350px;
+      border-radius: 50%;
+      object-fit: cover;
+      /* Circle photo (optional) */
+      border: 5px solid white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  /* .myskils {
+      background-color: #ffffff;
+      height: 580px;
+      width: auto;
+  } */
+  
+  .myskils {
+      padding: 100px 0;
+  }
+  
+  .myskils h1 {
+      font-size: 40px;
+      text-align: center;
+      padding: 30px;
+  }
+  
+  .skillcontainer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      /* ← EXACTLY 4 columns on large screens */
+      gap: 2rem;
+      padding: 0 20px;
+  }
+  /* @media (max-width: 1200px) {
+      .skillcontainer {
+          grid-template-columns: repeat(3, 1fr);
+           
+      }
+  }
+  
+  @media (max-width: 900px) {
+      .skillcontainer {
+          grid-template-columns: repeat(2, 1fr);
+           
+      }
+  }
+  
+  @media (max-width: 600px) {
+      .skillcontainer {
+          grid-template-columns: 1fr;
+         
+      }
+  } */
+  
+  .skillcard {
+      text-align: center;
+      border: 5px solid white;
+      padding: 60px;
+      border-radius: 5px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+  }
+  
+  .skillcard:hover {
+      transform: translateY(-5px);
+  }
+  
+  .project {
+      padding: 80px 0;
+      background: #f8f9fa;
+  }
+  
+  .project h1 {
+      font-size: 40px;
+      text-align: center;
+      padding: 30px;
+  }
+  
+  .projectContainer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      /* ← EXACTLY 4 columns on large screens */
+      gap: 2rem;
+      padding: 0 20px;
+  }
+  
+  .projectContainer a {
+      display: inline-block;
+      background: #e74c3c;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+      margin-top: 10px;
+      /* margin: 20px; */
+  }
+  
+  .projectContainer a:hover {
+      background: #c0392b;
+  }
+  
+  .projectCard {
+      height: 400px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+  }
+  
+  .project_img {
+      width: 100%;
+      height: 250px;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+  }
+  
+  .Project_info {
+      margin: 20px 20px;
+  }
+  
+  .projectCard:hover {
+      transform: translateY(-5px);
+  }
+  
+  .contact {
+      background: #f8f9fa;
+      padding: 100px 20px;
+      min-height: 100vh;
+      /* display: flex; */
+      /* align-items: center; */
+      /* ← Vertically center */
+  }
+  
+  .contactContainer {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+  }
+  
+  .contactContainer h1 {
+      font-size: 40px;
+      text-align: center;
+      padding: 30px;
+  }
+  
+  .contact-form {
+      text-align: left;
+  }
+  /* .contactContainer {
+      width: 100%;
+      max-width: 600px;
+      
+      margin: 0 auto;
+      text-align: center;
+  } */
+  
+  .contactContainer h1 {
+      font-size: 42px;
+      margin-bottom: 50px;
+      color: #002455;
+  }
+  
+  .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      /* Space between fields */
+      text-align: left;
+  }
+  
+  .form-group {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .form-group label {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #333;
+      font-size: 16px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+      padding: 14px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+      outline: none;
+      border-color: #002455;
+      box-shadow: 0 0 10px rgba(0, 36, 85, 0.2);
+  }
+  
+  .submit-btn {
+      padding: 15px 30px;
+      background: #002455;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+      align-self: center;
+      /* Button stays centered */
+      transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+      background: #003d80;
+      transform: translateY(-3px);
+  }
+  
+  footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+  }
