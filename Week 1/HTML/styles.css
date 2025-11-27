@@ -113,19 +113,12 @@
   
   .myphoto img {
       width: 350px;
-      /* Size you want */
       height: 350px;
       border-radius: 50%;
       object-fit: cover;
-      /* Circle photo (optional) */
       border: 5px solid white;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
-  /* .myskils {
-      background-color: #ffffff;
-      height: 580px;
-      width: auto;
-  } */
   
   .myskils {
       padding: 100px 0;
@@ -140,30 +133,27 @@
   .skillcontainer {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      /* ← EXACTLY 4 columns on large screens */
       gap: 2rem;
       padding: 0 20px;
   }
-  /* @media (max-width: 1200px) {
+  
+  @media (max-width: 1200px) {
       .skillcontainer {
           grid-template-columns: repeat(3, 1fr);
-           
       }
   }
   
   @media (max-width: 900px) {
       .skillcontainer {
           grid-template-columns: repeat(2, 1fr);
-           
       }
   }
   
   @media (max-width: 600px) {
       .skillcontainer {
           grid-template-columns: 1fr;
-         
       }
-  } */
+  }
   
   .skillcard {
       text-align: center;
@@ -192,7 +182,6 @@
   .projectContainer {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      /* ← EXACTLY 4 columns on large screens */
       gap: 2rem;
       padding: 0 20px;
   }
@@ -245,8 +234,6 @@
       padding: 100px 20px;
       min-height: 100vh;
       /* display: flex; */
-      /* align-items: center; */
-      /* ← Vertically center */
   }
   
   .contactContainer {
@@ -283,7 +270,6 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
-      /* Space between fields */
       text-align: left;
   }
   
@@ -325,7 +311,6 @@
       cursor: pointer;
       margin-top: 20px;
       align-self: center;
-      /* Button stays centered */
       transition: 0.3s;
   }
   
