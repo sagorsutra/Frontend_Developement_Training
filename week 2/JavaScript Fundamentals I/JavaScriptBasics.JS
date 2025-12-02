@@ -2,6 +2,64 @@
 
 let hello = (val) => { `hello ${val}` }
 
+//Normal function vs arrow function 
+
+
+setTimeout(() => console.log("done"), 1000)
+
+
+setTimeout(function() {
+    console.log("done");
+}, 1000);
+
+
+setTimeout(() => console.log("done"), 1000);
+
+
+
+/*
+Array.map(function(item){
+    return item *2;
+});
+
+array.map(item=> item*2);
+
+array.filter(user => user.active)
+
+array.filter(function(user){
+    return user.active;
+})
+
+let users = [
+    {name : "A", active : true},
+    {name : "B", active: false}
+];
+
+//bring me the active user 
+users.filter( user => user.active )
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Simple example
