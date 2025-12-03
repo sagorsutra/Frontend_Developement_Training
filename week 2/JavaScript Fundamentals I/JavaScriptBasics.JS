@@ -1,10 +1,38 @@
+//reduced
+
+
+
+
+const cart = [
+    { item: "Shirt", price: 25, quantity: 2 },
+    { item: "Pants", price: 40, quantity: 1 },
+    { item: "Shoes", price: 60, quantity: 1 }
+];
+
+const total = cart.reduce((sum, product) => {
+        return sum + (product.price * product.quantity);
+    }, 0
+
+);
+/*
+const number = [1,2,3,4];
+
+const sum = number.reduce((acc,current) => {
+  console.log(`current: ${acc} , current: ${current}`);
+  return acc + current;
+},0
+
+);
+*/
+
+
 //callbackfunction 
 
-let hello = (val) => { `hello ${val}` }
+//let hello = (val) => { `hello ${val}` }
 
 //Normal function vs arrow function 
 
-
+/*
 setTimeout(() => console.log("done"), 1000)
 
 
@@ -14,6 +42,9 @@ setTimeout(function() {
 
 
 setTimeout(() => console.log("done"), 1000);
+
+
+*/
 
 
 
