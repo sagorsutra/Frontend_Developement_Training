@@ -1,5 +1,109 @@
-//reduced
+//Exercise 2: Create a retry function that retries a failed operation 3 times using callbacks
 
+
+function retry(retry) {
+    return retry();
+}
+
+retry(function() {
+    for (let i = 1; i <= 3; i++) {
+        console.log(`retries a failed ${i} time operation`);
+
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+Exercise 1: Create a calculator function that takes two numbers and a callback operation
+
+
+const prompt = require("prompt-sync")();
+
+let val1 = Number(prompt("Enter the first value (give input in decending oder): "));
+let val2 = Number(prompt("Enter the Second value: "));
+
+
+function calculate(a, b, operation) {
+    return operation(a, b);
+}
+
+const add = (a, b) => a + b;
+const minus = (a, b) => a - b;
+const multi = (a, b) => a * b;
+const div = (a, b) => a / b;
+
+
+console.log(calculate(val1, val2, add));
+console.log(calculate(val1, val2, minus));
+console.log(calculate(val1, val2, multi));
+console.log(calculate(val1, val2, div));
+
+
+
+//diff between normal and callback function.
+
+function normalFunc() {
+    console.log("Hello forest");
+}
+
+normalFunc();
+
+function asyncFunc(callback) {
+    setTimeout(callback, 1000);
+}
+
+asyncFunc(function() {
+    console.log("Hello Sea");
+})
+
+
+//comparing two call backfunction
+
+function doHomework(subject, callback) {
+    console.log(`Starting my ${subject} homework...`);
+    setTimeout(() => {
+        console.log(`Just finished my ${subject} homework`);
+        callback();
+    }, 6000);
+
+}
+doHomework("math", function() {
+    console.log("No more study for today");
+});
+
+
+
+
+function orderPizza(type, callback) { //Just worte the function 
+    console.log(`🍕 Cooking ${type} pizza...`);
+
+    console.log(`🍕 ${type} pizza ready!`);
+    callback(); // Call the callback
+
+}
+
+//Now calling the function
+orderPizza("Pepperoni", function() {
+    console.log("3, ding dong eat this pizza");
+})
 
 
 
@@ -14,7 +118,7 @@ const total = cart.reduce((sum, product) => {
     }, 0
 
 );
-/*
+
 const number = [1,2,3,4];
 
 const sum = number.reduce((acc,current) => {
