@@ -2,7 +2,12 @@
 
 const arr = [1, 2, 3, 4, 5];
 
-const printArr = (arr) => show()
+function transArr(arr, transf) {
+    transf(arr.map(val => val * 2));
+}
+
+
+transArr(arr, )
 
 
 
@@ -18,12 +23,8 @@ const printArr = (arr) => show()
 
 
 
-
-
-
-
-
-1. Level 1
+/*
+//1. Level 1
 
 function checkOdd(num, callback) {
     let sqaure = num * num;
@@ -80,8 +81,9 @@ multiplyArr(arr, ans => console.log(ans));
 
 
 
-Exercise 1: Create a calculator
-function that takes two numbers and a callback operation
+// Exercise 1: Create a calculator
+
+// function that takes two numbers and a callback operation
 
 
 const prompt = require("prompt-sync")();
@@ -142,9 +144,9 @@ doHomework("math", function() {
 
 
 function orderPizza(type, callback) { //Just worte the function 
-    console.log(`🍕 Cooking ${type} pizza...`);
+    console.log(`  Cooking ${type} pizza...`);
 
-    console.log(`🍕 ${type} pizza ready!`);
+    console.log(`  ${type} pizza ready!`);
     callback(); // Call the callback
 
 }
@@ -222,28 +224,7 @@ let users = [
 //bring me the active user 
 users.filter(user => user.active)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 // Simple example
@@ -292,7 +273,7 @@ function sumAll() {
     }
     return sum;
 
-    Strict Mode❌ WITHOUT strict mode(BAD)
+//    Strict Mode WITHOUT strict mode(BAD)
 
     function createUser() {
         username = "John"; // Oops! Forgot 'let/const/var'
@@ -304,7 +285,7 @@ function sumAll() {
     "use strict";
 
     function createUser() {
-        username = "John"; // ❌ Throws: ReferenceError
+        username = "John"; //   Throws: ReferenceError
         // Must declare: let username = "John";
     }
     // console.log(username);
@@ -318,12 +299,13 @@ function sumAll() {
 
 
 
-    Function
-    callback
-    function
+    // Function
+    // callback
+
+    // function
 
 
-    let score = [10, 20, 30];
+  let score = [10, 20, 30];
 
     function addBonus() {
         score = [5]; // 😱 Oops! Meant to do score.push(5)
@@ -426,7 +408,7 @@ function sumAll() {
         let pizzaSizeMultiplier = 1;
         let basePrice = 10;
 
-        checking type safety check
+        // checking type safety check
 
         if (typeof size !== 'string' || typeof toppings !== 'number') {
             console.error("Invalid input types");
@@ -452,3 +434,7 @@ function sumAll() {
     let orderPizza = calculatePizzaPrice("large", "JKDL")
 
     console.log(`Your pizza costs : $${orderPizza}`)
+
+
+
+*/
