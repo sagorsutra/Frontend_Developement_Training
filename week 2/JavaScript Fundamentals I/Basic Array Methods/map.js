@@ -33,6 +33,84 @@ const productCatalog = products.map(product => {
 console.log(productCatalog);
 
 
+const prices = [10, 20, 30, 40, 50, 60];
+
+//--> adding 10 percent into the price 
+
+const withTax = prices.map(price => Number((price * 1.10).toFixed(2)));
+console.log(withTax);
+
+[11, 22, 33, 44, 55, 66]
+
+
+
+
+
+// Format as currency
+const fromatted = prices.map(price => `$${price.toFixed(2)}`);
+['$10.00', '$20.00', '$30.00', '$40.00', '$50.00', '$60.00']
+
+
+
+
+
+
+//extrct the name : 
+const users = [
+    { id: 1, name: "Alice", email: "alice@gmail.com" },
+    { id: 2, name: "stephen", email: "Stephen@gmail.com" },
+    { id: 3, name: "butcher", email: "butcher@gmail.com" }
+];
+
+const user = users.map(user => user.name);
+['Alice', 'stephen', 'butcher']
+
+
+
+
+
+// Raw API data (messy, inconsistent)
+
+const apiUsers = [
+    { user_id: 1, user_name: "john_doe", email_address: "john@email.com" },
+    { user_id: 2, user_name: "jane_smith", email_address: "jane@email.com" }
+];
+
+
+
+
+
+
+
+
+// Raw API data (messy, inconsistent)
+
+const normalizedUsers = apiUsers.map(user => ({
+    id: user.user_id,
+    name: user.user_name,
+    email: user.email_address,
+    isActive: true,
+    createAd: new Date().toISOString()
+}));
+
+console.log(normalizedUsers);
+
+[{
+        id: 1,
+        name: 'john_doe',
+        email: 'john@email.com',
+        isActive: true,
+        createAd: '2025-12-08T00:08:08.401Z'
+    },
+    {
+        id: 2,
+        name: 'jane_smith',
+        email: 'jane@email.com',
+        isActive: true,
+        createAd: '2025-12-08T00:08:08.402Z'
+    }
+]
+
 
 
 
@@ -128,85 +206,6 @@ user => ({ ... })
 
 problem from here --------->>> 
 
-const prices = [10, 20, 30, 40, 50, 60];
-
- --> adding 10 percent into the price 
  
- const withTax = prices.map(price => Number((price * 1.10).toFixed(2)));
- console.log(withTax);
-
-[ 11, 22, 33, 44, 55, 66 ]
-
-
-
-
-
-// Format as currency
- const fromatted = prices.map(price => `$${price.toFixed(2)}`);
-[ '$10.00', '$20.00', '$30.00', '$40.00', '$50.00', '$60.00' ]
-
-
-
-
-
-
-extrct the name : 
- const users = [
-     { id: 1, name: "Alice", email: "alice@gmail.com" },
-     { id: 2, name: "stephen", email: "Stephen@gmail.com" },
-     { id: 3, name: "butcher", email: "butcher@gmail.com" }
- ];
-
-  const user = users.map(user => user.name);
-  [ 'Alice', 'stephen', 'butcher' ]
-
-
-
-
-
-   // Raw API data (messy, inconsistent)
-
- const apiUsers = [
-     { user_id: 1, user_name: "john_doe", email_address: "john@email.com" },
-     { user_id: 2, user_name: "jane_smith", email_address: "jane@email.com" }
- ];
-
-
-
-
-
-
-
-
- // Raw API data (messy, inconsistent)
-
- const normalizedUsers = apiUsers.map(user => ({
-     id: user.user_id,
-     name: user.user_name,
-     email: user.email_address,
-     isActive: true,
-     createAd: new Date().toISOString()
- }));
-
- console.log(normalizedUsers);
-
-[
-  {
-    id: 1,
-    name: 'john_doe',
-    email: 'john@email.com',
-    isActive: true,
-    createAd: '2025-12-08T00:08:08.401Z'
-  },
-  {
-    id: 2,
-    name: 'jane_smith',
-    email: 'jane@email.com',
-    isActive: true,
-    createAd: '2025-12-08T00:08:08.402Z'
-  }
-]
-
-
 
  */
