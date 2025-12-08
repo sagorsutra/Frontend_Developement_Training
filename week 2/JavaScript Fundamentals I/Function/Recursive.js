@@ -37,7 +37,7 @@ function countcoment(node) {
 console.log(countcoment(commentThread));
 
 
-
+val m = 0;
 
 
 
