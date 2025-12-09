@@ -29,9 +29,9 @@ function removetask(task) {
 
     if (index !== -1) {
         tasks.splice(index, 1);
-        console.log(`removed: ${task}`);
+        console.log(`removed : ${task}`);
     } else {
-        console.log(`Task not found`);
+        console.log(`task not found`);
     }
 }
 
