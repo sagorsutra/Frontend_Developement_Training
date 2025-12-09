@@ -43,5 +43,5 @@ function listTasks() {
 
 addTask("Learn JavaScript");
 addTask("Practice Coding");
-removeTask("Learn JavaScript");
+removetask("Learn JavaScript");
 listTasks();
