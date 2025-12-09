@@ -8,12 +8,10 @@ class MultistepForm {
         this.responses.push({ ///Use (this) inside methods to access/update that object's data
             step: this.currentStep,
             data: data,
-            timstamp: new Date(),
-
+            timstamp: new Date()
         });
 
         this.currentStep++;
-
         console.log(`Step ${this.currentStep} submitted. Total : ${this.responses.length}`);
         return this.responses.length;
 

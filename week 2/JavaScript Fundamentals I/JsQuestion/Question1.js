@@ -8,12 +8,34 @@ Output:
 Conditions:
 The array will always have at least one element.
 If multiple values have same frequency, return any one.
-
-
 */
 
 
+
+//-----> Updated code 
+
+
 const arr = [5, 3, 9, 3, 5, 3, 1];
+let maxNum = 0;
+let maxcount = 0;
+const count = {};
+
+for (const num of arr) {
+    count[num] = (count[num] || 0) + 1;
+
+    if (count[num] > maxcount) {
+        maxcount = count[num];
+        maxNum = num;
+    }
+}
+
+console.log(`Most frequent: ${maxNum}  (${maxcount}times)`);
+
+
+
+
+
+/*  Old Code
 
 function frequElement(arr) {
     let result = 0;
@@ -25,14 +47,16 @@ function frequElement(arr) {
                 count++;
             }
         }
+
         if (count > maxcont || count == maxcont) {
             maxcont = count;
             result = arr[i]
         }
-
     }
     return result;
 }
 
 const ans = frequElement(arr);
 console.log(ans);
+
+*/

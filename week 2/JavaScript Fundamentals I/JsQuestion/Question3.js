@@ -9,7 +9,27 @@ The original array must not be modified.
 
 */
 
+//------> Updated Code 
+
 const arr = [10, 20, 10, 30, 20, 40];
+
+const uniqueSet = new Set();
+
+for (let val of arr) {
+    uniqueSet.add(val);
+}
+
+console.log(uniqueSet);
+
+
+
+
+
+
+
+/*---> Older Code 
+
+
 
 function NoDuplicate(arr) {
 
@@ -27,3 +47,5 @@ function NoDuplicate(arr) {
 
 
 console.log(NoDuplicate(arr));
+
+*/

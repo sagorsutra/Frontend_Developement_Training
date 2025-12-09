@@ -10,9 +10,43 @@ The sentence may contain multiple spaces.
 Do not use external libraries.
 */
 
+//--------------> Updated code 
+
+
+const str = "JavaScirpt is Fun";
+
+function revmanual(str) {
+    let result = '';
+
+    for (let i = str.length - 1; i >= 0; i--) {
+
+        result += str[i];
+    }
+    return result;
+}
+
+function rev(Sentence) {
+    let words = Sentence.split(' ');
+    let reverseWords = words.map(word => revmanual(word));
+    return reverseWords.join(' ');
+
+}
+
+
+console.log(rev(str));
+
+
+
+
+
+
+/*------->  Older Code 
+
+
 const str = "JavaScirpt is Fun";
 const wordArr = str.split(' ');
 console.log(wordArr[0]);
+
 
 function rev(arr) {
 
@@ -38,3 +72,5 @@ function rev(arr) {
 
 const reve = rev(wordArr);
 console.log(reve);
+
+*/
