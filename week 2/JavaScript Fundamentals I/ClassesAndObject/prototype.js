@@ -1,7 +1,7 @@
 //The JavaScript prototype property allows you to add new properties to object constructors:
 
 
-/*
+
 // Copies properties from a source object to a target object
 Object.assign(target, source)
 
@@ -56,5 +56,3 @@ Person.prototype.nationality = "English";
 const father = new Person("sagor", "Sutra", 39, "Blue");
 console.log(father);
 console.log(`${father} and his nationality is : ${father.nationality}`);
-
-*/
