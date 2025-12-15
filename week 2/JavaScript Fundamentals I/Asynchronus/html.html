@@ -4,10 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+
+    <title>User Loader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        
+        button {
+            background: #1da1f2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .user-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        
+        .loading {
+            color: gray;
+            font-style: italic;
+        }
+        
+        .error {
+            color: red;
+            background: #ffe6e6;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
+    <h2>📱 User Profile Loader</h2>
+
+    <button id="loadBtn">Load User</button>
+
+    <div id="userContainer">
+        <!-- User will appear here -->
+    </div>
     <script src="AsyncAwait.js"></script>
 </body>
 

@@ -1,148 +1,183 @@
-   function getData(dataID, getNextData) {
-       return new Promise((resolve, reject) => {
-           setTimeout(() => {
-               console.log("data", dataID);
-               resolve("Success");
+//----------==> THis is a variable method
 
-           }, 3000);
-       })
-   }
+//    const myPromise = new Promise((resolve, reject) => {
+//        setTimeout(() => {
+//            //console.log("Task is completed");
+//            resolve("Task has been completed");      
+//        }, 2000);
+//    });
 
-   getData(1)
-       .then((res) => {
-           return getData(2);
-       })
-       .then((res) => {
-           return getData(2);
-       })
-       .then((res) => {
-           console.log(res);
-       })
-
-
-   //---------------------->
-
-   function asyncFunc1() {
-       return new Promise((resolve, reject) => {
-           setTimeout(() => {
-               console.log("data1");
-               resolve("success");
-           }, 4000);
-       });
-   }
-
-   function asyncFunc2() {
-       return new Promise((resolve, reject) => {
-           setTimeout(() => {
-               console.log("data2");
-               resolve("success");
-           }, 2000);
-       })
-   }
-
-
-   console.log("Fetching data1 ......");
-   asyncFunc1().then((res) => {
-       console.log("Fetching data2....");
-       asyncFunc2().then((res) => {
-           //console.log("")
-       })
-   })
-
-   //----------->> Promise chain 
+//myPromise.then(result => console.log(result))
+//     .catch(result => console.error(result));
 
 
 
 
 
-   //------------------------->>
 
-   function getPromise() {
-       return new Promise((resolve, reject) => {
-           console.log("I am a promise");
-           //reject("error");
-           resolve("Successful");
+//-------------------> This is a function method 
+function workAsync() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Done")
+        }, 2000);
+    })
+}
 
-       });
-   };
+workAsync().then(result => console.log(result));
 
-   let promise = getPromise();
-   promise.then((res) => {
-       console.log("promise fulfilled", res);
-   });
+/*
+   
+   
+function getData(dataID, getNextData) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data", dataID);
+            resolve("Success");
 
-   promise.catch((err) => {
-       console.log("rejected", err);
-   });
+        }, 3000);
+    })
+}
 
-
-   //      --------------> 
-
-
-   let promise = new Promise((resolve, reject) => {
-       console.log("I'm a promise");
-       resolve("Succes");
-   })
-
-   function getData(dataID, getNextData) {
-       return new Promise((resolve, reject) => {
-           setTimeout(() => {
-               console.log("data", dataID);
-               resolve("Success");
-               if (getNextData) {
-                   getnextData();
-               }
-
-           }, 8000)
-       })
-   }
+getData(1)
+    .then((res) => {
+        return getData(2);
+    })
+    .then((res) => {
+        return getData(2);
+    })
+    .then((res) => {
+        console.log(res);
+    })
 
 
-   function myDisplayer(some) {
-       document.getElementById("demo").innerHTML = some;
-   }
+//---------------------->
 
-   let myPromise = new Promise(function(myResolve, myReject) {
-       let x = 0;
+function asyncFunc1() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data1");
+            resolve("success");
+        }, 4000);
+    });
+}
 
-       // The producing code (this may take some time)
-
-       if (x == 0) {
-           myResolve("OK");
-       } else {
-           myReject("Error");
-       }
-   });
-
-   myPromise.then(
-       function(value) { myDisplayer(value); },
-       function(error) { myDisplayer(error); }
-   );
-
-   function getFile(myCallback) {
-       let req = new XMLHttpRequest();
-       req.open('GET', "mycar.html");
-       req.onload = function() {
-           if (req.status == 200) {
-               myCallback(req.responseText);
-           } else {
-               myCallback("Error: " + req.status);
-           }
-       }
-       req.send();
-   }
-
-   getFile(myDisplayer);
-
-   const myPromise1 = new Promise((resolve, reject) => {
-       setTimeout(resolve, 200, "King");
-   });
+function asyncFunc2() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data2");
+            resolve("success");
+        }, 2000);
+    })
+}
 
 
-   const myPromise2 = new Promise((resolve, reject) => {
-       setTimeout(resolve, 100, "Queen");
-   });
+console.log("Fetching data1 ......");
 
-   Promise.allSettled([myPromise1, myPromise2]).then((results) =>
-       results.forEach((x) => myDisplay(x.status)),
-   );
+
+asyncFunc1().then((res) => {
+    console.log("Fetching data2....");
+    asyncFunc2().then((res) => {
+        //console.log("")
+    })
+})
+
+//----------->> Promise chain 
+
+
+
+
+
+//------------------------->>
+
+function getPromise() {
+    return new Promise((resolve, reject) => {
+        console.log("I am a promise");
+        //reject("error");
+        resolve("Successful");
+
+    });
+};
+
+let promise = getPromise();
+promise.then((res) => {
+    console.log("promise fulfilled", res);
+});
+
+promise.catch((err) => {
+    console.log("rejected", err);
+});
+
+
+//      --------------> 
+
+
+let promise = new Promise((resolve, reject) => {
+    console.log("I'm a promise");
+    resolve("Succes");
+})
+
+function getData(dataID, getNextData) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data", dataID);
+            resolve("Success");
+            if (getNextData) {
+                getnextData();
+            }
+
+        }, 8000)
+    })
+}
+
+
+function myDisplayer(some) {
+    document.getElementById("demo").innerHTML = some;
+}
+
+let myPromise = new Promise(function(myResolve, myReject) {
+    let x = 0;
+
+    // The producing code (this may take some time)
+
+    if (x == 0) {
+        myResolve("OK");
+    } else {
+        myReject("Error");
+    }
+});
+
+myPromise.then(
+    function(value) { myDisplayer(value); },
+    function(error) { myDisplayer(error); }
+);
+
+function getFile(myCallback) {
+    let req = new XMLHttpRequest();
+    req.open('GET', "mycar.html");
+    req.onload = function() {
+        if (req.status == 200) {
+            myCallback(req.responseText);
+        } else {
+            myCallback("Error: " + req.status);
+        }
+    }
+    req.send();
+}
+
+getFile(myDisplayer);
+
+const myPromise1 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 200, "King");
+});
+
+
+const myPromise2 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 100, "Queen");
+});
+
+Promise.allSettled([myPromise1, myPromise2]).then((results) =>
+    results.forEach((x) => myDisplay(x.status)),
+);
+
+*/
