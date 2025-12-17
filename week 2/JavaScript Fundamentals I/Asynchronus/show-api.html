@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>API Demo — Random User</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px
+        }
+        
+        .loading {
+            color: #666
+        }
+        
+        .user-card {
+            border: 1px solid #ddd;
+            padding: 12px;
+            border-radius: 6px;
+            max-width: 420px
+        }
+        
+        .error {
+            color: #b00
+        }
+        
+        #loadBtn {
+            padding: 8px 12px;
+            margin-bottom: 12px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>API Demo — Random User</h1>
+    <button id="loadBtn">Load random user</button>
+    <div id="userContainer"></div>
+    <p id="fact"></p>
+
+    <!-- Re-uses existing AsyncAwait.js in this folder -->
+    <script src="Api.js"></script>
+</body>
+
+</html>
