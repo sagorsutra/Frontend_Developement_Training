@@ -34,6 +34,9 @@ async function postData() {
 }
 
 
+localStorage.setItem('name', 'JOhn');
+//localStorage.removeItem('name');
+
 /*
 const URL = "https://api.genderize.io?name=peter";
 const btn = document.querySelector("#loadBtn");

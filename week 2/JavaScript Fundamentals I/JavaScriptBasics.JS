@@ -23,7 +23,7 @@ transArr(arr, )
 
 
 
-/*
+
 //1. Level 1
 
 function checkOdd(num, callback) {
@@ -224,7 +224,7 @@ let users = [
 //bring me the active user 
 users.filter(user => user.active)
 
- 
+
 
 
 // Simple example
@@ -273,7 +273,7 @@ function sumAll() {
     }
     return sum;
 
-//    Strict Mode WITHOUT strict mode(BAD)
+    //    Strict Mode WITHOUT strict mode(BAD)
 
     function createUser() {
         username = "John"; // Oops! Forgot 'let/const/var'
@@ -305,7 +305,7 @@ function sumAll() {
     // function
 
 
-  let score = [10, 20, 30];
+    let score = [10, 20, 30];
 
     function addBonus() {
         score = [5]; // 😱 Oops! Meant to do score.push(5)
@@ -437,4 +437,5 @@ function sumAll() {
 
 
 
-*/
+    *
+    /
