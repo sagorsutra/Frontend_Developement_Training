@@ -28,7 +28,7 @@ c = {
     adult : true
 };
 
-let d : object ;
+let d : object;
 
 d = [1,2,3,65];
 console.log(d)
@@ -42,7 +42,7 @@ let val  : any
 val = 5;
 val = 'Sumit';
 
-let valu: any[] = [];
+let valu: any[] = [];   // declaring type a arrray -> let val : any[] = []
 valu.push("Bangladesh");
 
 valu.push(34);

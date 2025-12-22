@@ -1,32 +1,32 @@
 "use strict";
 //Normal varibales 
-var numbers = [1, 2, 3];
-var country = "I love Cat";
+let numbers = [1, 2, 3];
+const country = "I love Cat";
 console.log(country);
-var b;
-var a = [];
+let b;
+let a = [];
 b = 'sumit';
 a.push('Sumit', 4);
 console.log(a);
 //Object
-var c;
+let c;
 c = {
     name: 'Sagor',
     age: 34,
     adult: true
 };
-var d;
+let d;
 d = [1, 2, 3, 65];
 console.log(d);
 console.log(c);
 //Dynamic type
-var val;
+let val;
 val = 5;
 val = 'Sumit';
-var valu = [];
+let valu = []; // declaring type a arrray -> let val : any[] = []
 valu.push("Bangladesh");
 valu.push(34);
-var obj;
+let obj;
 obj = {
     name: 'Bangladesh',
     age: 45

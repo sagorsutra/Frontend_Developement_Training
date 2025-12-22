@@ -1,10 +1,12 @@
+
+
 let UserDetails : (id: number | string , userInfo: {
     name : string,
     age : number
 }) => void; 
 
 
-UserDetails= (id : number | string , user: {
+UserDetails = (id : number | string , user: {
     name : string,
     age : number
 }) => {
@@ -34,8 +36,7 @@ calculation = (a: number, b: number , c: string) =>{
 
 
 
-/*
-==========================> Function Signature
+// ==========================> Function Signature
 
 
 let UserDetails : (id: number | string , userInfo: {
@@ -48,13 +49,13 @@ UserDetails= (id : number | string , user: {
     name : string,
     age : number
 }) => {
-
+    console.log();
 }
 
 
 
 
-========================>>> Type aliassss
+//========================>>> Type aliassss
 
 type stringOrNum = string | number;
 type userType = {name: string, age: number }
@@ -74,12 +75,13 @@ const sayHello = (user: userType)=> {
 }
 
 
-||||--> comparing code 
+//||||--> comparing code 
 
 type stringOrNum = string | number;
+type userdetail ={ name: string , age : number }
  const userDetails = (
     id: string | number ,
-    user : {name: string, age: number }
+    user : userdetail
 ) => {
     console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
 
@@ -112,4 +114,3 @@ myFunc = ()  =>{
 
 
 
-*/
