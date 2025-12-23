@@ -1,19 +1,38 @@
 "use strict";
 //Gerenic code style as demand of logic and data 
-const resp = {
-    port: 200,
-    status: 404,
-    data: {
-        Lodge: 500,
-        Weight: "Pound"
+//  interface ApiResponse<T>{
+//     port : number ;
+//     status : number ;
+//     data : T;
+//  }
+//  const resp : ApiResponse<object> = {
+//     port : 200,
+//     status : 404,
+//     data : {
+//         Lodge : 500, 
+//         Weight : "Pound"
+//     }
+//  }
+// console.log(resp);
+// generic type , you've to mention the type while mentioning
+class box {
+    constructor(content) {
+        this.content = content;
     }
-};
-console.log(resp);
-const addID = (obj) => {
-    let id = Math.floor(Math.random() * 100);
-    return Object.assign(Object.assign({}, obj), { id });
-};
-const user = addID({ name: "Sagor", age: 50 });
+    getContent() {
+        return this.content;
+    }
+}
+const val = new box("Wrapped box");
+console.log(val.getContent());
+// const addID = <T extends {
+//     name : string;
+//     age: number;
+// }> (obj: T) =>{
+//     let id = Math.floor(Math.random() * 100);
+//     return {...obj, id};
+// }
+// const user = addID({name: "Sagor", age: 50})
 // console.log(user);
 // let user = addID({
 //     name: "Mashrafi",

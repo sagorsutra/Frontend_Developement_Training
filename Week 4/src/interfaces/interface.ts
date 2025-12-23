@@ -1,3 +1,16 @@
+/*
+What does it describe?
+
+No logic
+No default behavior
+No shared state
+Just “what must exist”
+
+👉 That is exactly what interfaces are for.
+*/
+
+
+
 import{Player} from '../Classes/Player.js'
 import {IsPlayer} from './IsPlayer.js'
 
@@ -7,6 +20,33 @@ let sakib : IsPlayer;
 sakib = new Player("sakib", 35, "bangladesh"); 
 console.log(sakib);
 
+
+
+interface coach{
+    name : string,
+    yearExperience : number,
+    getAdvice() : string;
+    train(player : string) :void;
+}
+
+
+
+//-----------> Now you can make as much as type of coach as you want
+
+class footballCoach implements coach{
+    name : string;
+    yearExperience : number;
+    constructor( name : string, experience : number  ){
+        this.name = name;
+        this.yearExperience = experience;
+    }
+    getAdvice =() =>{
+        return  `${this.yearExperience} says: Practice more!`;    
+        }
+        train(player: string) {
+        console.log(`${this.yearExperience} is training ${player}`);
+    }
+}
 
 
 
