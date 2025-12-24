@@ -1,3 +1,4 @@
+"use strict";
 /*
 // models/user.model.ts
 export interface User {
@@ -75,4 +76,4 @@ const user: Readonly<User> = {
 //user.name = "Rahim"; // ❌ Error
 
 
-*/
+*/ 

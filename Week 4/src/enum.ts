@@ -7,10 +7,10 @@ enum RType{
     FORBIDDEN,
 }
 
-
+//Usage of generic type 
  interface ApiResponses<T>{
     port : number ;
-    status : number ;
+    status : number;
     Type : RType;
     data : T;
  }

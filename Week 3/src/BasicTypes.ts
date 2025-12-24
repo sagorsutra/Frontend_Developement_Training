@@ -1,4 +1,97 @@
+type User = { name: string };
+type Admin = { name: string; role: "admin" };
+
+function isAdmin(person: User | Admin): person is Admin {
+    return (person as Admin).role === "admin";   //Type Assertion
+}
+
+function printRole(person: User | Admin) {
+    if (isAdmin(person)) {
+        console.log(person.role); // ✅ Admin
+    }
+}
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function processResponseBad(response: any) {
+    console.log(response.data.name.toUpperCase()); 
+    // Runtime error হতে পারে যদি data বা name না থাকে
+}
+
+function processResponseGood(response: unknown) {
+    // টাইপ চেক ছাড়া কিছু করা যাবে না
+    if (typeof response === "object" && 
+        response !== null && 
+        "data" in response &&
+        typeof (response as any).data === "object" &&
+        (response as any).data !== null &&
+        "name" in (response as any).data) {
+        
+        console.log(((response as any).data as any).name.toUpperCase());
+    }
+}
+
+
+interface ApiResponse {
+    data: {
+        name: string;
+    };
+}
+
+function isApiResponse(obj: unknown): obj is ApiResponse {
+    return (
+        typeof obj === "object" &&
+        obj !== null &&
+        "data" in obj &&
+        typeof (obj as any).data === "object" &&
+        (obj as any).data !== null &&
+        "name" in (obj as any).data &&
+        typeof (obj as any).data.name === "string"
+    );
+}
+
+function processResponseBest(response: unknown) {
+    if (isApiResponse(response)) {
+        console.log(response.data.name.toUpperCase()); // Type-safe
+    }
+}
+
+
+/*
 //Normal varibales 
 let numbers   = [1,2,3];
 

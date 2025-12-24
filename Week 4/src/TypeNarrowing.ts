@@ -16,12 +16,12 @@ function check(p : Admin | User){
 }
 
 
-class Dog{
+class Dogg{
     bark(){}
 }
 
-function sound(a: Dog | string){
-    if(a instanceof Dog){
+function sound(a: Dogg | string){
+    if(a instanceof Dogg){
         a.bark();
     }
 }

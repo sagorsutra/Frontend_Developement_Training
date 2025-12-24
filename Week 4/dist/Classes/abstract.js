@@ -21,34 +21,23 @@ const card = new cardPayment();
 card.payment(550);
 const cash = new cashpayment();
 cash.payment(230);
-/*
-abstract class Animal{// Abstract class must have normal & abstract method
-    abstract makeSound(): void;
-
-    move(): void{
+class Animal {
+    move() {
         console.log("Animal is moving");
     }
 }
-
 //Child class to have implement this method
-
 class Dog extends Animal {
-    makeSound(): void {
+    makeSound() {
         console.log("Woof Wooff!");
     }
 }
-
-class Cat extends Animal{
-    makeSound(): void {
+class Cat extends Animal {
+    makeSound() {
         console.log("Mewaaooo");
     }
 }
-
 const dog = new Dog();
 dog.makeSound();
-
 const cat = new Cat();
 cat.makeSound();
-
-
-*/ 
