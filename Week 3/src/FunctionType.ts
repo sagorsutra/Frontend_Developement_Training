@@ -14,7 +14,7 @@ UserDetails = (id : number | string , user: {
 }
  
 
-let add: (x: number, y: number) => number;
+let add: (x: number, y: number) => number |string;
 
 add = (a: number , b: number ) =>{
     return a+b;

@@ -1,27 +1,27 @@
-function print(val : string | number){
-    if(typeof val === 'string'){
-        console.log(val.toUpperCase());
-    }
-}
+// function print(val : string | number){
+//     if(typeof val === 'string'){
+//         console.log(val.toUpperCase());
+//     }
+// }
 
-//--------->in
+// //--------->in
 
-type Admin ={role : "admin"; permission: string[]};
-type User= {role : "user"};
+// type Admin ={role : "admin"; permission: string[]};
+// type Users= {role : "user"};
 
-function check(p : Admin | User){
-    if("permission" in p){
-        console.log(p.permission);
-    }
-}
+// function check(p : Admin | User){
+//     if("permission" in p){
+//         console.log(p.permission);
+//     }
+// }
 
 
-class Dogg{
-    bark(){}
-}
+// class Dogg{
+//     bark(){}
+// }
 
-function sound(a: Dogg | string){
-    if(a instanceof Dogg){
-        a.bark();
-    }
-}
+// function sound(a: Dogg | string){
+//     if(a instanceof Dogg){
+//         a.bark();
+//     }
+// }

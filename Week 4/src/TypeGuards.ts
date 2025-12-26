@@ -1,6 +1,7 @@
 
 //scope and usage of unknown type narrow
 
+/*
 let value : unknown;
 
 if(typeof value === "string"){
@@ -15,7 +16,7 @@ function checks(valu : any){
 }
 
 
-console.log(checks());
+// console.log(checks());
 console.log(checks("hello"));
 
 

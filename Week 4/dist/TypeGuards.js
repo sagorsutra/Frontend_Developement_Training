@@ -1,12 +1,26 @@
 "use strict";
-let value;
-if (typeof value === "string") {
+//scope and usage of unknown type narrow
+/*
+let value : unknown;
+
+if(typeof value === "string"){
     value.toUpperCase();
 }
-function checks(valu) {
-    return valu.toUpperCase();
+
+
+ 
+
+function checks(valu : any){
+     return valu.toUpperCase();
 }
+
+
+// console.log(checks());
 console.log(checks("hello"));
+
+
+
+ 
 /*
 type admin = {role : "admin"; access:  string[] };
 type user = { role: "User"; email : string};
