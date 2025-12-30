@@ -1,0 +1,152 @@
+PS C:\Office\Training\Frontend_Developement_Training> cd "Week 5"    
+PS C:\Office\Training\Frontend_Developement_Training\Week 5> cd "FirstApp"  
+PS C:\Office\Training\Frontend_Developement_Training\Week 5\FirstApp> ng --version
+Node.js version v25.2.1 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/previous-releases/.
+21.0.4
+PS C:\Office\Training\Frontend_Developement_Training\Week 5\FirstApp> cd ..
+PS C:\Office\Training\Frontend_Developement_Training\Week 5> cd "Angular"
+PS C:\Office\Training\Frontend_Developement_Training\Week 5\Angular> 
+ *  History restored 
+
+PS C:\Office\Training\Frontend_Developement_Training> nvm cur
+
+Running version 1.1.10.
+
+Usage:
+ 
+  nvm arch                     : Show if node is running in 32 or 64 bit mode.
+  nvm current                  : Display active version.
+  nvm install <version> [arch] : The version can be a specific version, "latest" for the latest current version, or "lts" for the
+                                 most recent LTS version. Optionally specify whether to install the 32 or 64 bit version (defaults
+                                 to system arch). Set [arch] to "all" to install 32 AND 64 bit versions.
+                                 Add --insecure to the end of this command to bypass SSL validation of the remote download server.
+  nvm list [available]         : List the node.js installations. Type "available" at the end to see what can be installed. Aliased as ls.
+  nvm on                       : Enable node.js version management.
+  nvm off                      : Disable node.js version management.
+  nvm proxy [url]              : Set a proxy to use for downloads. Leave [url] blank to see the current proxy.
+                                 Set [url] to "none" to remove the proxy.
+  nvm node_mirror [url]        : Set the node mirror. Defaults to https://nodejs.org/dist/. Leave [url] blank to use default url.
+  nvm npm_mirror [url]         : Set the npm mirror. Defaults to https://github.com/npm/cli/archive/. Leave [url] blank to default url.
+  nvm uninstall <version>      : The version must be a specific version.
+  nvm use [version] [arch]     : Switch to use the specified version. Optionally use "latest", "lts", or "newest".
+                                 "newest" is the latest installed version. Optionally specify 32/64bit architecture.
+                                 nvm use <arch> will continue using the selected version, but switch to 32/64 bit mode.
+  nvm root [path]              : Set the directory where nvm should store different versions of node.js.
+                                 If <path> is not set, the current root will be displayed.
+  nvm [--]version              : Displays the current running version of nvm for Windows. Aliased as v.
+
+PS C:\Office\Training\Frontend_Developement_Training> nvm current
+v25.2.1
+PS C:\Office\Training\Frontend_Developement_Training> nvm intall 16
+
+Running version 1.1.10.
+
+Usage:
+ 
+  nvm arch                     : Show if node is running in 32 or 64 bit mode.
+  nvm current                  : Display active version.
+  nvm install <version> [arch] : The version can be a specific version, "latest" for the latest current version, or "lts" for the
+                                 most recent LTS version. Optionally specify whether to install the 32 or 64 bit version (defaults
+                                 to system arch). Set [arch] to "all" to install 32 AND 64 bit versions.
+                                 Add --insecure to the end of this command to bypass SSL validation of the remote download server.
+  nvm list [available]         : List the node.js installations. Type "available" at the end to see what can be installed. Aliased as ls.
+  nvm on                       : Enable node.js version management.
+  nvm off                      : Disable node.js version management.
+  nvm proxy [url]              : Set a proxy to use for downloads. Leave [url] blank to see the current proxy.
+                                 Set [url] to "none" to remove the proxy.
+  nvm node_mirror [url]        : Set the node mirror. Defaults to https://nodejs.org/dist/. Leave [url] blank to use default url.
+  nvm npm_mirror [url]         : Set the npm mirror. Defaults to https://github.com/npm/cli/archive/. Leave [url] blank to default url.
+  nvm uninstall <version>      : The version must be a specific version.
+  nvm use [version] [arch]     : Switch to use the specified version. Optionally use "latest", "lts", or "newest".
+                                 "newest" is the latest installed version. Optionally specify 32/64bit architecture.
+                                 nvm use <arch> will continue using the selected version, but switch to 32/64 bit mode.
+  nvm root [path]              : Set the directory where nvm should store different versions of node.js.
+                                 If <path> is not set, the current root will be displayed.
+  nvm [--]version              : Displays the current running version of nvm for Windows. Aliased as v.
+
+PS C:\Office\Training\Frontend_Developement_Training> nvm "install 16"
+
+Running version 1.1.10.
+
+Usage:
+
+  nvm arch                     : Show if node is running in 32 or 64 bit mode.
+  nvm current                  : Display active version.
+  nvm install <version> [arch] : The version can be a specific version, "latest" for the latest current version, or "lts" for the
+                                 most recent LTS version. Optionally specify whether to install the 32 or 64 bit version (defaults
+                                 to system arch). Set [arch] to "all" to install 32 AND 64 bit versions.
+                                 Add --insecure to the end of this command to bypass SSL validation of the remote download server.
+  nvm list [available]         : List the node.js installations. Type "available" at the end to see what can be installed. Aliased as ls.
+  nvm on                       : Enable node.js version management.
+  nvm off                      : Disable node.js version management.
+  nvm proxy [url]              : Set a proxy to use for downloads. Leave [url] blank to see the current proxy.
+                                 Set [url] to "none" to remove the proxy.
+  nvm node_mirror [url]        : Set the node mirror. Defaults to https://nodejs.org/dist/. Leave [url] blank to use default url.
+  nvm npm_mirror [url]         : Set the npm mirror. Defaults to https://github.com/npm/cli/archive/. Leave [url] blank to default url.
+  nvm uninstall <version>      : The version must be a specific version.
+  nvm use [version] [arch]     : Switch to use the specified version. Optionally use "latest", "lts", or "newest".
+                                 "newest" is the latest installed version. Optionally specify 32/64bit architecture.
+                                 nvm use <arch> will continue using the selected version, but switch to 32/64 bit mode.
+  nvm root [path]              : Set the directory where nvm should store different versions of node.js.
+                                 If <path> is not set, the current root will be displayed.
+  nvm [--]version              : Displays the current running version of nvm for Windows. Aliased as v.
+
+PS C:\Office\Training\Frontend_Developement_Training> nvm install 16
+Downloading node.js version 16.20.2 (64-bit)... 
+Extracting node and npm...
+Complete
+npm v8.19.4 installed successfully.
+
+
+Installation complete. If you want to use this version, type
+
+nvm use 16.20.2
+PS C:\Office\Training\Frontend_Developement_Training>
+PS C:\Office\Training\Frontend_Developement_Training>
+PS C:\Office\Training\Frontend_Developement_Training>
+PS C:\Office\Training\Frontend_Developement_Training>
+PS C:\Office\Training\Frontend_Developement_Training> nvm list
+
+  * 25.2.1 (Currently using 64-bit executable)
+    16.20.2
+PS C:\Office\Training\Frontend_Developement_Training> nvm use 16.20.2
+Now using node v16.20.2 (64-bit)
+PS C:\Office\Training\Frontend_Developement_Training> nvm list
+
+    25.2.1
+  * 16.20.2 (Currently using 64-bit executable)
+PS C:\Office\Training\Frontend_Developement_Training> cd "Angular"
+cd : Cannot find path 'C:\Office\Training\Frontend_Developement_Training\Angular' because it does not exist.
+At line:1 char:1
++ cd "Angular"
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Office\Train...raining\Angular:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Office\Training\Frontend_Developement_Training> cd "Week 5"
+PS C:\Office\Training\Frontend_Developement_Training\Week 5> cd "Angular"
+PS C:\Office\Training\Frontend_Developement_Training\Week 5\Angular> nvm list
+
+    25.2.1
+  * 16.20.2 (Currently using 64-bit executable)
+PS C:\Office\Training\Frontend_Developement_Training\Week 5\Angular> node --version
+v16.20.2
+PS C:\Office\Training\Frontend_Developement_Training\Week 5\Angular> npm install -g @angular/cli@14
+npm ERR! code CERT_NOT_YET_VALID
+npm ERR! errno CERT_NOT_YET_VALID
+npm ERR! request to https://registry.npmjs.org/@angular%2fcli failed, reason: certificate is not yet valid
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\DELL\AppData\Local\npm-cache\_logs\2025-12-29T22_06_38_639Z-debug-0.log
+PS C:\Office\Training\Frontend_Developement_Training\Week 5\Angular> npm --version
+8.19.4
+PS C:\Office\Training\Frontend_Developement_Training\Week 5\Angular> 
+PS C:\Office\Training\Frontend_Developement_Training\Week 5\Angular> npm install -g @angular/cli@14
+npm ERR! code CERT_NOT_YET_VALID
+npm ERR! errno CERT_NOT_YET_VALID
+npm ERR! request to https://registry.npmjs.org/@angular%2fcli failed, reason: certificate is not yet valid
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\DELL\AppData\Local\npm-cache\_logs\2025-12-29T22_09_14_564Z-debug-0.log
+PS C:\Office\Training\Frontend_Developement_Training\Week 5\Angular> npm install -g @angular/cli@14
